@@ -1,0 +1,14 @@
+{
+  "request_data": {
+    "phone": "+639152688578"
+  },
+  "status_code": 200,
+  "response_data": {
+    "code": 200,
+    "message": "Request has been processed successfully!",
+    "data": {
+      "sessionAttemptToken": "cd802a891acc45e7bb12ec532bf60894",
+      "blockFor": 30
+    }
+  }
+}
