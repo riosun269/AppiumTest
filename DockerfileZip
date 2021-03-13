@@ -1,0 +1,16 @@
+FROM maven:3.6-jdk-8-alpine
+
+ENV PROJECT_HOME /usr/src/app
+
+COPY ./ ${PROJECT_HOME}
+
+#Step 5: Install more packages
+RUN apk add --update \
+python \
+curl \
+bash
+
+WORKDIR ${PROJECT_HOME}
+
+RUN ./packageTest.sh
+RUN chmod a+w /usr/src/app/target/zip-with-dependencies.zip
